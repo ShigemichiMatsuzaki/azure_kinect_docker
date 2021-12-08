@@ -10,8 +10,6 @@ docker run -it \
     --name azure_kinect \
     --net host \
     --privileged \
-    --env CLIENT_IP=127.0.0.1 \
-    --env MASTER_IP=127.0.0.1 \
     --env ROS_MASTER_URI=${ROS_MASTER_URI} \
     --env ROS_IP=${ROS_IP} \
     -v "/etc/localtime:/etc/localtime:ro" \
